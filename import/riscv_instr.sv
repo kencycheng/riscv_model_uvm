@@ -103,6 +103,7 @@ class riscv_instr extends uvm_object;
 
   // Create the list of instructions based on the supported ISA extensions and configuration of the
   // generator.
+/*
   static function void create_instr_list(riscv_instr_gen_config cfg);
     instr_names.delete();
     instr_group.delete();
@@ -200,7 +201,7 @@ class riscv_instr extends uvm_object;
       basic_instr = {basic_instr, WFI};
     end
   endfunction : build_basic_instruction_list
-
+*/
   static function riscv_instr get_rand_instr(riscv_instr instr_h = null,
                                              riscv_instr_name_t include_instr[$] = {},
                                              riscv_instr_name_t exclude_instr[$] = {},

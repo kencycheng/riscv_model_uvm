@@ -2,8 +2,8 @@
 `define RISCV_PROGRAMMERS_MODEL_SV 
 class riscv_programmers_model extends uvm_object;
 // 16 extendsion has 16 registers
-parameter X_REGISTER_BANK_SIZE 32
-parameter F_REGISTER_BANK_SIZE 32
+parameter int X_REGISTER_BANK_SIZE = 32;
+parameter int F_REGISTER_BANK_SIZE = 32;
 // architecture states
 bit [XLEN-1:0] X[X_REGISTER_BANK_SIZE];
 bit [XLEN-1:0] F[F_REGISTER_BANK_SIZE];

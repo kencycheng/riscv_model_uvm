@@ -27,7 +27,6 @@ package riscv_instr_pkg;
 // this parameter is copied from target/riscv_core_setting.sv
   parameter int XLEN = 32;
 
-  `include "riscv_dv_type_defines.sv"
 
 
 
@@ -42,7 +41,8 @@ package riscv_instr_pkg;
   parameter int DATA_WIDTH  = 32;
 
 
-  `include "riscv_dv_global_functions.sv"
+  `include "riscv_dv_type_defines.svi"
+  `include "riscv_dv_global_functions.svi"
 
 
   `include "riscv_instr.sv"
